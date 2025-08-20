@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fernanda L'Amour Fotografia</title>
+  <meta name="description" content="Portfólio de fotografia: casamentos, aniversários, formaturas, batizados, 15 anos, ensaios corporativos e festas infantis." />
+  <meta name="keywords" content="fotografia, casamento, aniversário, formatura, batizado, 15 anos, fotógrafo, ensaio corporativo, festas infantis" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <meta property="og:title" content="Fernanda L'Amour Fotografia" />
+  <meta property="og:description" content="Capturando momentos únicos e transformando-os em memórias eternas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preload" href="assets/logo.webp" as="image" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <header class="navbar">
+    <nav class="container">
+      <a href="#home" class="brand">  <i class="bi bi-camera me-2"></i> L'Amour Fotografia </a>
+
+      <button id="menuToggle" aria-label="Abrir menu" class="burger" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="hero reveal">
+      <div class="container center">
+        <picture>
+          <source srcset="assets/logo.png" type="image/webp" />
+          <img src="assets/logo.png" alt="Fernanda L'Amour Fotografia" class="logo" loading="eager" />
+        </picture>
+        <h1>Capturando momentos únicos</h1>
+        <p>Transformando histórias em memórias eternas.</p>
+        <a class="btn primary" href="#contato">Solicitar Orçamento</a>
+      </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="about reveal">
+  <div class="container profile">
+    <img src="assets/profile.jpg" alt="Fernanda L'Amour Fotografia" class="logo-profile" loading="eager" />
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou <strong>Fernanda L’Amour</strong>, fotógrafa apaixonada por registrar a essência de cada momento.
+      Com olhar sensível e técnica apurada, cubro eventos como casamentos, aniversários, formaturas, batizados,
+      15 anos, ensaios corporativos e festas infantis.
+    </p>
+  </div>
+  </section>
+
+
+    <!-- Galeria -->
+    <section id="galeria" class="gallery reveal">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Tudo</button>
+          <button class="filter-btn" data-filter="casamento">Casamentos</button>
+          <button class="filter-btn" data-filter="aniversario">Aniversários</button>
+          <button class="filter-btn" data-filter="formatura">Formaturas</button>
+          <button class="filter-btn" data-filter="batizado">Batizados</button>
+          <button class="filter-btn" data-filter="corporativo">Ensaios Corporativos</button>
+          <button class="filter-btn" data-filter="15anos">15 anos</button>
+          <button class="filter-btn" data-filter="infantil">Festas Infantis</button>
+        </div>
+        <div id="grid" class="grid">
+          <!-- Substitua as imagens por suas fotos reais em assets/galeria/ -->
+          <figure class="grid-item" data-cat="casamento">
+            <img src="assets/Casamento 1.jpg" alt="Casamento 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="casamento">
+            <img src="assets/Casamento 2.jpg" alt="Casamento 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="aniversario">
+            <img src="assets/Aniversário adulto 1.jpg" alt="Aniversário 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="aniversario">
+            <img src="assets/Aniversário adulto 3.jpg" alt="Aniversário 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="formatura">
+            <img src="assets/Formatura 1.jpg" alt="Formatura 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="formatura">
+            <img src="assets/Formatura 3.jpg" alt="Formatura 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="batizado">
+            <img src="assets/Batizado 1.jpg" alt="Batizado 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="batizado">
+            <img src="assets/Batizado 2.jpg" alt="Batizado 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="batizado">
+            <img src="assets/Batizado 3.jpg" alt="Batizado 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="corporativo">
+            <img src="assets/Ensaio corporativo 1.jpg" alt="Corporativo 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="corporativo">
+            <img src="assets/Ensaio corporativo 2.jpg" alt="Corporativo 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="corporativo">
+            <img src="assets/Ensaio corporativo 3.jpg" alt="Corporativo 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="15anos">
+            <img src="assets/15 anos 2.jpg" alt="15 anos 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="15anos">
+            <img src="assets/15 anos 3.jpg" alt="15 anos 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="15anos">
+            <img src="assets/15 anos 4.jpg" alt="15 anos 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="infantil">
+            <img src="assets/Infantil 1.jpg" alt="Infantil 1" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="infantil">
+            <img src="assets/Infantil 2.jpg" alt="Infantil 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="infantil">
+            <img src="assets/Infantil 3.jpg" alt="Infantil 3" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="casamento">
+            <img src="assets/Casamento 1.jpg" alt="Casamento 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="aniversario">
+            <img src="assets/Casamento 3.jpg" alt="Aniversário 2" loading="lazy" />
+          </figure>
+          <figure class="grid-item" data-cat="formatura">
+            <img src="assets/Formatura 2.jpg" alt="Formatura 2" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Fechar">×</button>
+      <button class="lightbox-prev" aria-label="Anterior">‹</button>
+      <img id="lightboxImg" src="" alt="Foto ampliada" />
+      <button class="lightbox-next" aria-label="Próxima">›</button>
+    </div>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="testimonials reveal">
+      <div class="container narrow">
+        <h2>Depoimentos</h2>
+        <div class="carousel" role="region" aria-label="Depoimentos de clientes">
+          <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+          <div class="carousel-track">
+            <article class="testimonial">
+              <img src="assets/cliente1.jpg" alt="Cliente Maria" class="avatar" loading="lazy" />
+              <blockquote>“A Fernanda captou cada detalhe do meu casamento com perfeição!”</blockquote>
+              <p class="author">Maria & João</p>
+            </article>
+            <article class="testimonial">
+              <img src="assets/cliente2.jpg" alt="Cliente Carla" class="avatar" loading="lazy" />
+              <blockquote>“As fotos do aniversário do meu filho ficaram incríveis!”</blockquote>
+              <p class="author">Carla Souza</p>
+            </article>
+            <article class="testimonial">
+              <img src="assets/cliente3.jpg" alt="Cliente Rafael" class="avatar" loading="lazy" />
+              <blockquote>“Profissionalismo, sensibilidade e entrega rápida. Recomendo!”</blockquote>
+              <p class="author">Rafael Lima</p>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Próximo">›</button>
+        </div>
+        <div class="dots" aria-label="Navegação de depoimentos"></div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="events reveal">
+  <div class="container">
+    <h2>Eventos</h2>
+    <ul class="event-list">
+      <li class="event-item">
+        <button class="event-toggle">Aniversários</button>
+        <div class="event-content">
+          <p>Pacote com cobertura fotográfica de até 4 horas.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">Formaturas</button>
+        <div class="event-content">
+          <p>Pacote incluindo fotos individuais e coletivas.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">Batizados</button>
+        <div class="event-content">
+          <p>Pacote com cobertura de cerimônia e recepção.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">Casamentos</button>
+        <div class="event-content">
+          <p>Pacote com making of, cerimônia e festa.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">Ensaios Corporativos</button>
+        <div class="event-content">
+          <p>Pacote incluindo fotos de equipe e ambiente profissional.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">15 anos</button>
+        <div class="event-content">
+          <p>Pacote de cobertura da festa completa e ensaio pré-evento.</p>
+        </div>
+      </li>
+      <li class="event-item">
+        <button class="event-toggle">Festas Infantis</button>
+        <div class="event-content">
+          <p>Pacote com cobertura de até 3 horas.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- Contato -->
+    <section id="contato" class="contact reveal">
+  <div class="container narrow">
+    <h2>Contato</h2>
+    <p>Entre em contato para solicitar orçamentos e informações.</p>
+
+    <!-- Redes sociais -->
+    <div class="social">
+      <a class="icon" href="mailto:lamoursena@gmail.com" aria-label="E-mail">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      <a class="icon" href="https://instagram.com/lamourphotos" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a class="icon" href="https://facebook.com/lamourphotos" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </div>
+
+    <!-- Formulário de contato -->
+    <form class="form" id="contactForm">
+      <label>Nome
+        <input type="text" name="nome" required />
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+
+      <!-- Campo de telefone -->
+      <label>Telefone
+          <input 
+              type="tel" 
+             id="telefone" 
+              name="telefone" 
+              placeholder="(99) 99999-9999" 
+               inputmode="numeric" 
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}" 
+                required />
+      </label>
+
+      <label>Mensagem
+        <textarea name="mensagem" rows="5" required></textarea>
+      </label>
+
+      <!-- Botão com ícone -->
+      <button type="submit" class="btn primary">
+        <i class="bi bi-send-fill"></i> Enviar Mensagem
+      </button>
+
+      <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fernanda L'Amour Fotografia • Aracaju - SE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Script da máscara de telefone -->
+<script>
+  const telefoneInput = document.getElementById('telefone');
+
+  telefoneInput.addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, ""); // remove tudo que não é número
+    if (value.length > 11) value = value.slice(0, 11);
+
+    if (value.length > 10) {
+      // Formato (99) 99999-9999
+      value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+    } else if (value.length > 6) {
+      // Formato (99) 9999-9999
+      value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+    } else if (value.length > 2) {
+      value = value.replace(/^(\d{2})(\d{0,5})$/, "($1) $2");
+    } else {
+      value = value.replace(/^(\d*)$/, "($1");
+    }
+
+    e.target.value = value;
+  });
+</script>
+  <!-- Botão Flutuante do WhatsApp -->
+<a href="https://wa.me/5579999448383" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Fale comigo no WhatsApp">
+   <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
