@@ -134,3 +134,8 @@ document.querySelectorAll(".event-toggle").forEach(button => {
   });
 });
 
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
