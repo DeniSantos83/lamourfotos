@@ -18,65 +18,37 @@ body{
   color:var(--fg);
 }
 
-/* Loader ocupa a tela toda */
-#page-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #111; /* cor de fundo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  overflow: hidden;
+
+/* Animação de Entrada */
+.intro-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-out;
 }
 
-/* Ponto inicial */
-#page-loader .dot {
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  border-radius: 50%;
-  opacity: 1;
-  animation: loaderAnim 3.5s forwards;
+.camera-icon {
+    font-size: 3rem; /* Tamanho inicial do ícone */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
 
-/* Animações em sequência */
-@keyframes loaderAnim {
-  0% {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    opacity: 1;
-  }
-  25% {
-    width: 4px;
-    height: 100vh;   /* linha vertical ocupa a tela */
-    border-radius: 0;
-    opacity: 1;
-  }
-  50% {
-    width: 100vw;    /* linha horizontal ocupa a tela */
-    height: 4px;
-    border-radius: 0;
-    opacity: 1;
-  }
-  75% {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    opacity: 1;
-  }
-  100% {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    opacity: 0;  /* desaparece no final */
-  }
+.camera-icon.clicked {
+    transform: scale(200); /* Expande para simular o flash */
+    color: white;
 }
-
+.site-content {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
 
 .container{max-width:1100px; margin:0 auto; padding:0 20px}
 .center{text-align:center}
@@ -299,3 +271,111 @@ h2{font-size: clamp(24px, 3.5vw, 36px); margin:0 0 20px; color:var(--brand)}
 .form-msg{margin-top:10px; color:var(--brand)}
 
 .footer{padding:24px 0; border-top:1px solid rgba(255,255,255,.08); background:#0c0c0c; text-align:center; color:#cfcfcf}
+
+/* Loader */
+.intro-animation {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100vh;
+  background-color: black;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease;
+}
+
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.camera-icon {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.click-text {
+  font-size: 1.2rem;
+  color: #f3d47e;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.flash-effect {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.flash-effect.active {
+  animation: flash 0.8s forwards;
+}
+
+@keyframes flash {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Esconde o conteúdo até a animação terminar */
+.site-content {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.site-content.visible {
+  opacity: 1;
+}
+
+/* Novo formulário de depoimentos */
+.add-testimonial {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.add-testimonial h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--brand);
+  font-size: 1.6rem;
+}
+
+.add-testimonial .form {
+  display: grid;
+  gap: 16px;
+}
+
+.add-testimonial select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.add-testimonial select:focus {
+  outline: 2px solid var(--brand);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .add-testimonial {
+    padding: 20px 15px;
+  }
+}

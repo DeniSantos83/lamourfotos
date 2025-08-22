@@ -21,10 +21,16 @@
 <body>
    
 
-<div id="page-loader">
-  <div class="dot"></div>
+    <!-- Loader -->
+<div class="intro-animation" id="intro-animation">
+  <div class="camera-container">
+    <i class="bi bi-camera-fill camera-icon"></i>
+    <p class="click-text">Clique aqui</p>
+  </div>
+  <div class="flash-effect" id="flash-effect"></div>
 </div>
 
+<div id="site-content" class="site-content">
   <header class="navbar" >
     <nav class="container">
       <a href="#home" class="brand">  <i class="bi bi-camera me-2"></i> L'Amour Fotografia </a>
@@ -187,6 +193,38 @@
         </div>
         <div class="dots" aria-label="Navegação de depoimentos"></div>
       </div>
+      <!-- Novo depoimento -->
+<!-- Novo Depoimento -->
+<div class="add-testimonial reveal">
+  <div class="container narrow">
+    <h3>Deixe seu depoimento</h3>
+    <form id="testimonialForm" class="form">
+      <label>Nome
+        <input type="text" id="testimonialName" required />
+      </label>
+
+      <label>Mensagem
+        <textarea id="testimonialMessage" rows="4" required></textarea>
+      </label>
+
+      <label>Login com
+        <select id="testimonialLogin" required>
+          <option value="">Selecione</option>
+          <option value="google">Google</option>
+          <option value="facebook">Facebook</option>
+          <option value="instagram">Instagram</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn primary">
+        <i class="bi bi-send-fill"></i> Enviar para aprovação
+      </button>
+    </form>
+    <p id="testimonialMsg" class="form-msg" role="status" aria-live="polite"></p>
+  </div>
+</div>
+
+
     </section>
 
     <!-- Eventos -->
@@ -327,23 +365,7 @@
   });
 </script>
 
-<script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("page-loader");
-    const site = document.getElementById("site-content");
 
-    setTimeout(() => {
-      loader.style.display = "none";
-      site.style.display = "block";
-    }, 4200); // espera a animação (4.2s)
-  });
-</script>
-
-<!--TESTE DE FADE-->
-
-<script>
-  AOS.init();
-</script>
 
 
 
@@ -354,6 +376,6 @@
    aria-label="Fale comigo no WhatsApp">
    <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
 </a>
-
+</div>
 </body>
 </html>
