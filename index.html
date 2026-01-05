@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fernanda L'Amour Fotografia</title>
+  <meta name="description" content="Portfólio de fotografia: casamentos, aniversários, formaturas, batizados, 15 anos, ensaios corporativos e festas infantis." />
+  <meta name="keywords" content="fotografia, casamento, aniversário, formatura, batizado, 15 anos, fotógrafo, ensaio corporativo, festas infantis" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <meta property="og:title" content="Fernanda L'Amour Fotografia" />
+  <meta property="og:description" content="Capturando momentos únicos e transformando-os em memórias eternas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="preload" href="assets/logo.webp" as="image" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+   
+
+    <!-- Loader -->
+<div class="intro-animation" id="intro-animation">
+  <div class="camera-container">
+    <i class="bi bi-camera-fill camera-icon"></i>
+    <p class="click-text">Clique na câmera</p>
+  </div>
+  <div class="flash-effect" id="flash-effect"></div>
+</div>
+
+<div id="site-content" class="site-content">
+  <header class="navbar" >
+    <!-- …logo abaixo do loader -->
+<audio id="click-sfx" src="assets/sfx/camera-click.mp3" preload="auto"></audio>
+    <!--NAV-->
+    <nav class="container">
+      <a href="#home" class="brand">
+        <img src="assets/logo-mini.png" alt="Fernanda L’Amour" class="mini-logo">
+      </a>
+
+
+      <button id="menuToggle" aria-label="Abrir menu" class="burger" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="menu">
+        <li><a href="#home">Home</a></li>
+         <li><a href="#sobre">Sobre mim</a></li>
+         <li><a href="#eventos-galeria">Cobertura</a></li>
+        <li><a href="#propostas">Material</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="hero reveal" >
+      <div class="container center">
+        <picture>
+          <source srcset="assets/logo.png" type="image/webp" />
+          <img src="assets/logo.png" alt="Fernanda L'Amour Fotografia" class="logo" loading="eager" />
+        </picture>
+        <h1>Capturando momentos únicos</h1>
+        <p>Transformando histórias em memórias eternas.</p>
+        <a class="btn primary shine--loop" href="#contato">Solicitar Orçamento</a>
+      </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="about reveal">
+  <div class="container profile">
+    <img src="assets/profile.jpg" alt="Fernanda L'Amour Fotografia" class="logo-profile" loading="eager" />
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou <strong>Fernanda L’Amour</strong>, fotógrafa apaixonada por registrar a essência de cada momento.
+      Com olhar sensível e técnica apurada, cubro eventos como casamentos, aniversários, formaturas, batizados,
+      15 anos, ensaios corporativos e festas infantis.
+    </p>
+  </div>
+  </section>
+  <!-- Evento casamento -->
+   <section id="eventos-galeria">
+    <div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-hearts"></i>
+    <div class="event-text">
+      <h3>Casamentos</h3>
+      <p>Histórias de amor contadas com olhar artístico e emoção genuína.</p>
+      <p><i class="bi bi-check"></i> Pacote com making of, cerimônia e festa.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Casamento 1.jpg"
+        data-full="assets/Casamento 1.jpg"
+        alt="Casamento - foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Casamento 2.jpg"
+        data-full="assets/Casamento 2.jpg"
+        alt="Casamento - foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Casamento 3.jpg"
+        data-full="assets/Casamento 3.jpg"
+        alt="Casamento - foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+<!-- Evento Aniversários -->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-balloon-heart"></i>
+    <div class="event-text">
+      <h3>Aniversários</h3>
+      <p>
+        Registros cheios de cor, alegria e espontaneidade para reviver cada sorriso.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote com cobertura fotográfica de até 3 horas.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Aniversário adulto 1.jpg"
+        data-full="assets/Aniversário adulto 1.jpg"
+        alt="Aniversário foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Aniversário adulto 2.jpg"
+        data-full="assets/Aniversário adulto 2.jpg"
+        alt="Aniversário foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Aniversário adulto 3.jpg"
+        data-full="assets/Aniversário adulto 3.jpg"
+        alt="Aniversário foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+<!-- Evento Formaturas -->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-mortarboard"></i>
+    <div class="event-text">
+      <h3>Formaturas</h3>
+      <p>
+        Fotografias que eternizam conquistas, amizades e a emoção da celebração.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote incluindo fotos individuais e coletivas.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Formatura 1.jpg"
+        data-full="assets/Formatura 1.jpg"
+        alt="Formatura foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Formatura 2.jpg"
+        data-full="assets/Formatura 2.jpg"
+        alt="Formatura foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Formatura 3.jpg"
+        data-full="assets/Formatura 3.jpg"
+        alt="Formatura foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+
+<!-- Evento Batizados -->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-droplet"></i>
+    <div class="event-text">
+      <h3>Batizados</h3>
+      <p>
+        Momentos de fé e ternura capturados com sensibilidade e luz natural.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote com cobertura de cerimônia e recepção.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Batizado 1.jpg"
+        data-full="assets/Batizado 1.jpg"
+        alt="Batizado foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Batizado 2.jpg"
+        data-full="assets/Batizado 2.jpg"
+        alt="Batizado foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Batizado 3.jpg"
+        data-full="assets/Batizado 13.jpg"
+        alt="Batizado foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+
+<!-- Evento Ensaios corporativos -->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-person-badge"></i>
+    <div class="event-text">
+      <h3>Ensaios corporativos</h3>
+      <p>
+        Imagens profissionais que comunicam credibilidade e identidade.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote incluindo fotos de equipe e ambiente profissional.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Ensaio corporativo 1.jpg"
+        data-full="assets/Ensaio corporativo 1.jpg"
+        alt="Ensaio corporativo foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Ensaio corporativo 2.jpg"
+        data-full="assets/Ensaio corporativo 2.jpg"
+        alt="Ensaio corporativo foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Ensaio corporativo 3.jpg"
+        data-full="assets/Ensaio corporativo 3.jpg"
+        alt="Ensaio corporativo foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+  <!-- Evento 15 anos-->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-stars"></i>
+    <div class="event-text">
+      <h3>15 anos</h3>
+      <p>
+        Ensaio cheio de brilho, estilo e personalidade — um marco inesquecível.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote com cobertura fotográfica da festa de até 4 horas.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/15 anos 2.jpg"
+        data-full="assets/15 anos 2.jpg"
+        alt="15 anos foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/15 anos 3.jpg"
+        data-full="assets/15 anos 3.jpg"
+        alt="15 anos foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/15 anos 4.jpg"
+        data-full="assets/15 anos 4.jpg"
+        alt="15 anos foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+  <!-- Evento Festa infantil-->
+<div class="event-card event-portfolio" data-preview-open="false">
+  <div class="event-head">
+    <i class="bi bi-emoji-smile"></i>
+    <div class="event-text">
+      <h3>Festa infantil</h3>
+      <p>
+        Registros vibrantes da pureza e energia das crianças, com muita cor e leveza.
+
+      </p>
+      <p><i class="bi bi-check"></i> Pacote com cobertura de até 3 horas.</p>
+    </div>
+    
+  </div>
+
+  <!-- preview (3 fotos) -->
+  <div class="event-preview" hidden>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Infantil 1.jpg"
+        data-full="assets/Infantil 1.jpg"
+        alt="Infantil foto 1"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Infantil 2.jpg"
+        data-full="assets/Infantil 2.jpg"
+        alt="Infantil foto 2"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="preview-item">
+      <img
+        src="assets/thumbs/Infantil 3.jpg"
+        data-full="assets/Infantil 3.jpg"
+        alt="Infantil foto 3"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</div>
+    
+</section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Fechar">×</button>
+      <button class="lightbox-prev" aria-label="Anterior">‹</button>
+      <img id="lightboxImg" src="" alt="Foto ampliada" />
+      <button class="lightbox-next" aria-label="Próxima">›</button>
+    </div>
+
+    <!-- Propostas Fotográficas -->
+<section id="propostas" class="proposals reveal">
+  <div class="container">
+    <h2>Propostas Fotográficas</h2>
+
+    <div class="proposal-grid">
+      
+      <!-- Fotos Digitais -->
+      <div class="proposal-card">
+        <div class="proposal-img-wrap">
+          <img src="assets/propostas/fotos-digitais.jpg" alt="Exemplo de fotos digitais" class="proposal-img">
+          <div class="proposal-overlay">
+            <h3>Fotos Digitais</h3>
+          </div>
+        </div>
+        <i class="bi bi-camera2"></i>
+        <p>Entrega das imagens em alta resolução, com tratamento profissional e link para download seguro.</p>
+      </div>
+
+      <!-- Fotos Impressas -->
+      <div class="proposal-card">
+        <div class="proposal-img-wrap">
+          <img src="assets/propostas/fotos-impressas.jpg" alt="Exemplo de fotos impressas" class="proposal-img">
+          <div class="proposal-overlay">
+            <h3>Fotos Impressas</h3>
+          </div>
+        </div>
+        <i class="bi bi-printer"></i>
+        <p>Impressões em papel fotográfico premium, com acabamento fosco e cores vibrantes.</p>
+      </div>
+
+      <!-- Álbum -->
+      <div class="proposal-card">
+        <div class="proposal-img-wrap">
+          <img src="assets/propostas/album.jpg" alt="Exemplo de álbum fotográfico" class="proposal-img">
+          <div class="proposal-overlay">
+            <h3>Álbum</h3>
+          </div>
+        </div>
+        <i class="bi bi-book"></i>
+        <p>Álbuns com maletas exclusivas, acabamento artesanal e fotos de alta qualidade.</p>
+      </div>
+
+      <!-- Fotobook -->
+      <div class="proposal-card">
+        <div class="proposal-img-wrap">
+          <img src="assets/propostas/fotobook.jpg" alt="Exemplo de fotobook" class="proposal-img">
+          <div class="proposal-overlay">
+            <h3>Fotobook</h3>
+          </div>
+        </div>
+        <i class="bi bi-journal-richtext"></i>
+        <p>Fotobook moderno, com design editorial e narrativa visual. Perfeito para registrar ensaios e eventos.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="testimonials reveal">
+  <div class="container narrow">
+    <h2>Depoimentos</h2>
+    <div class="carousel" role="region" aria-label="Depoimentos de clientes">
+      <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+      <div class="carousel-track">
+        <article class="testimonial">
+          <img src="assets/depoimentos/dep1.jpeg" alt="Depoimento cliente 1" class="testimonial-img" />
+          <blockquote>"Certo, Eu amei muito, obrigado! Seu trabalho é maravilhoso. "</blockquote>
+          <h4>— Ana</h4>
+        </article>
+        <article class="testimonial">
+          <img src="assets/depoimentos/dep2.jpeg" alt="Depoimento cliente 2" class="testimonial-img" />
+          <blockquote>"Fernanda, as fotos ficaram lindas. Muito obrigado pela disponibilidade, mesmo em cima da hora. Parabéns pelo belissímo trabalho e que Deus abençoes os seus passos, sempre."</blockquote>
+          <h4>— Beatriz Santos</h4>
+        </article>
+        <article class="testimonial">
+          <img src="assets/depoimentos/dep3.jpeg" alt="Depoimento cliente 3" class="testimonial-img" />
+           <blockquote>"Ficou tudo lindo e bem caprichado...Obrigada pela carinho e dedicação"</blockquote>
+          <h4>— Marcia</h4>
+        </article>
+        <article class="testimonial">
+          <img src="assets/depoimentos/dep4.jpeg" alt="Depoimento cliente 4" class="testimonial-img" />
+           <blockquote>"Ficou sim. Obrigado Fernanda pelo trabalho maravilhoso."</blockquote>
+          <h4>— João Henrique e Claudia</h4>
+        </article>
+        <article class="testimonial">
+          <img src="assets/depoimentos/dep5.jpeg" alt="Depoimento cliente 5" class="testimonial-img" />
+           <blockquote>"Obrigada! Perfeito! Amei, de paixão! Quero fazer o batizado dela. "</blockquote>
+          <h4>— Helena</h4>
+        </article>
+      </div>
+      <button class="carousel-btn next" aria-label="Próximo">›</button>
+    </div>
+    <div class="dots" aria-label="Navegação de depoimentos"></div>
+  </div>
+</section>
+
+
+    
+   
+
+
+    <!-- Contato -->
+   <section id="contato" class="contact reveal">
+  <div class="container narrow">
+    <h2 data-aos="fade-up">Contato</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Entre em contato para solicitar orçamentos e informações.
+    </p>
+
+    <!-- Bloco informativo -->
+    <div class="contact-extra">
+      <div class="availability" data-aos="fade-right" data-aos-delay="200">
+        <div class="icon-wrap">
+          <i class="bi bi-calendar3"></i>
+        </div>
+        <div class="availability-text">
+          <h4>Disponibilidade</h4>
+          <p>📅 <span id="mesPoucas"></span>: poucas datas disponíveis</p>
+          <p>📅 <span id="mesAinda"></span>: ainda há datas disponíveis</p>
+        </div>
+      </div>
+
+      <div class="contact-cta" data-aos="fade-left" data-aos-delay="300">
+        <div class="icon-wrap camera-icon-wrap">
+          <i class="bi bi-camera2"></i>
+        </div>
+        <div class="cta-text">
+          <h3>Agende seu ensaio</h3>
+          <p>Conte um pouco sobre o momento que deseja registrar — um casamento, um ensaio ou um evento especial — e vamos conversar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <form class="form" id="contactForm">
+
+  <label>
+    Nome
+    <input type="text" name="nome" id="nome" required />
+  </label>
+
+  <label>
+    Telefone
+    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999" required />
+  </label>
+
+  <label>
+  Tipo de evento
+  <select id="tipoEvento" name="tipoEvento" required>
+    <option value="" selected disabled>Selecione...</option>
+    <option value="Casamento">Casamento</option>
+    <option value="Batizado">Batizado</option>
+    <option value="Aniversário">Aniversário</option>
+    <option value="Ensaio Fotográfico">Ensaio Fotográfico</option>
+    <option value="Formatura">Formatura</option>
+    <option value="Outros">Outros</option>
+  </select>
+</label>
+
+<label>
+  Data do evento
+  <input type="date" id="dataEvento" name="dataEvento" required />
+</label>
+
+
+  
+
+  <label>
+    Mensagem
+    <textarea name="mensagem" id="mensagem" rows="4"
+      placeholder="Conte mais detalhes sobre o evento (local, duração, estilo...)"></textarea>
+  </label>
+
+  <button type="submit" class="btn primary">
+    Enviar pelo WhatsApp
+  </button>
+
+</form>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-social">
+      <a href="https://instagram.com/lamourfotografia_" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://facebook.com/lamouremfoto" target="_blank"><i class="bi bi-facebook"></i></a>
+    </div>
+    <p>© <span id="year"></span> Fernanda L’Amour Fotografia | by Deni&F</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  
+
+  <!-- Botão Flutuante do WhatsApp -->
+<a href="https://wa.me/5579999448383" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Fale comigo no WhatsApp">
+   <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
+</a>
+</div>
+
+<!--FORM -> WHATSAPP (robusto)--> 
+<!--FORM -> WHATSAPP (fix)--> 
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = this;
+
+  const nomeEl = form.querySelector('#nome');
+  const telEl = form.querySelector('#telefone');
+  const tipoEl = form.querySelector('#tipoEvento');
+  const dataEl = form.querySelector('#dataEvento');
+  const mensagemEl = form.querySelector('#mensagem');
+
+  const nome = (nomeEl?.value || "").trim();
+  const telefone = (telEl?.value || "").trim();
+  const tipoEvento = (tipoEl?.value || "").trim();
+  const dataEvento = (dataEl?.value || "").trim();
+  const mensagem = (mensagemEl?.value || "").trim();
+
+  // validação
+  if (!nome || !telefone || !tipoEvento || !dataEvento) {
+    alert("Por favor, preencha Nome, Telefone, Tipo de evento e Data do evento.");
+    return;
+  }
+
+  // formata YYYY-MM-DD => DD/MM/AAAA
+  let dataFmt = dataEvento;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dataEvento)) {
+    const [yyyy, mm, dd] = dataEvento.split("-");
+    dataFmt = `${dd}/${mm}/${yyyy}`;
+  }
+
+  const numeroWhatsApp = "5579999448383"; // número da Fernanda
+
+  const textoWhatsApp =
+`Olá, Fernanda! 👋
+Meu nome é *${nome}*.
+
+📞 *Telefone:* ${telefone}
+📸 *Tipo de evento:* ${tipoEvento}
+📅 *Data do evento:* ${dataFmt}
+
+📝 *Mensagem:*
+${mensagem || "Ainda não informei detalhes, podemos conversar?"}`;
+
+  const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
+  window.open(url, "_blank");
+});
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Seu script -->
+<script src="script.js"></script>
+
+</body>
+</html>
