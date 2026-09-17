@@ -515,7 +515,7 @@ function App() {
       {/* FORMULÁRIO QUE ENVIA A SOLICITAÇÃO PARA O WHATSAPP */}
       <section className="contato secao" id="contato">
         <div className="contato-foto">
-          <img src="assets/Casamento 1.jpg" alt="Buquê de casamento" />
+          <img src="assets/Casamento 2.jpg" alt="Buquê de casamento" />
           <span>
             <Heart size={16} /> Seu momento merece ser eterno
           </span>

@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// O base precisa ter o mesmo nome do repositório do GitHub.
+// Como o site usará domínio próprio, a base deve ser a raiz.
 export default defineConfig({
   plugins: [react()],
-  base: "/lamour-react/",
+  base: "/",
 });
