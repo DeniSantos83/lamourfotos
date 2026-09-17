@@ -233,6 +233,9 @@ function App() {
   const [nome, setNome] = useState("");
   const [tipoEvento, setTipoEvento] = useState("Casamento");
   const [dataEvento, setDataEvento] = useState("");
+  // Quantidade total de depoimentos disponíveis na pasta.
+  // As imagens devem estar nomeadas de dep1.jpeg até dep18.jpeg.
+  const totalDepoimentos = 18;
 
   // Troca automaticamente a imagem do Hero a cada três segundos.
   useEffect(() => {
@@ -494,11 +497,32 @@ function App() {
               L’Amour.
             </p>
             <div className="controles">
-              <button onClick={() => setDepoimento((depoimento - 1 + 5) % 5)}>
+              {/* Volta para o depoimento anterior.
+      Quando estiver no primeiro, volta para o último. */}
+              <button
+                onClick={() =>
+                  setDepoimento(
+                    (depoimento - 1 + totalDepoimentos) % totalDepoimentos,
+                  )
+                }
+                aria-label="Depoimento anterior"
+              >
                 <ChevronLeft />
               </button>
-              <span>{depoimento + 1} / 5</span>
-              <button onClick={() => setDepoimento((depoimento + 1) % 5)}>
+
+              {/* Mostra a posição atual e a quantidade total. */}
+              <span>
+                {String(depoimento + 1).padStart(2, "0")} / {totalDepoimentos}
+              </span>
+
+              {/* Avança para o próximo depoimento.
+      Depois do último, retorna ao primeiro. */}
+              <button
+                onClick={() =>
+                  setDepoimento((depoimento + 1) % totalDepoimentos)
+                }
+                aria-label="Próximo depoimento"
+              >
                 <ChevronRight />
               </button>
             </div>
